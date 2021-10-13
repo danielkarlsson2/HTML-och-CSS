@@ -1,0 +1,31 @@
+#post-1 {
+    color: hsl(246, 72%, 70%);
+}
+
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    color: #0000ff;
+}
+small{
+    color: rgb(0, 0, 255);
+}
+
+.post p, .sm {
+    color: green;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        text-align: start;
+    }
+    /* h1 {
+        color: darkorange;
+    }
+    body {
+        background-color: darkturquoise;
+    } */
+}

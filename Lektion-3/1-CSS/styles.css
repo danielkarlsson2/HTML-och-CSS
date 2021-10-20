@@ -95,3 +95,47 @@ card 1 p{} För att stätta individuella typsnitt */
 .card-3 li:nth-child(odd) {
     background-color: #bbb;
 }
+
+.link {
+    border: 1px solid #333;
+    width: 200px;
+    height: 50px;
+    /* padding: 10px; */
+    margin: 50px 10px;
+    display: inline-block;
+}
+
+.btn {
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    cursor: pointer; 
+}
+.btn-light {
+    background-color: rgb(92, 41, 107);
+    color: #fff;
+}
+.btn-light:hover {
+    background-color: rgb(185, 38, 173);
+    transform: scale(0.99);
+}
+
+.daniels-knapp{
+    /* padding: .7rem 1.5rem; */
+    background-color: #222;
+    /* border: none; */
+    color: #fff;
+    /* border-radius: 5px; */
+    /* cursor: pointer;  */
+    /* hand över knappen */
+    /* transition: all 0.2s ease; */
+}
+.daniels-knapp:hover{
+    background-color: #aaa;
+    color: #222;
+}
+.daniels-knapp:active{
+    background-color: green;
+    /* transform: scale(0.98); */
+}

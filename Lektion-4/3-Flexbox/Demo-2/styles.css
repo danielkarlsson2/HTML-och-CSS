@@ -1,0 +1,13 @@
+.wrapper {
+    /* background-color: tomato; */
+    height: 100vh;
+    /* vh anpassar sig när du förminskar rutan - Viewportheight */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center
+    
+}

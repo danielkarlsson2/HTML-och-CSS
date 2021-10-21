@@ -10,7 +10,7 @@
 }
 
 #primary-section {
-    order: 2;
+    /* order: 2; */
 }
 #secondary-section {
     flex-direction: column;

@@ -1,0 +1,17 @@
+html, body {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.navbar {
+    width: 100%;
+
+}
+
+
+.container {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}

@@ -2,16 +2,17 @@ html, body {
     font-size: 12px;
     font-weight: 100;
 }
-
-.navbar {
+.top-menu {
     width: 100%;
-
-}
-
-
-.container {
-    width: 100%;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    
+}
+.container {
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    border: 1px solid red;
 }

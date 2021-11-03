@@ -1,4 +1,4 @@
-@import '.colors.css';
+@import './color.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -10,3 +10,20 @@ body {
 .color {
     color: var(--primary-color);
 }
+
+@media (min-width: 768px) {
+    body {
+        /* background-color: var(--secondary-color); */
+    }
+    .border {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+/* @media only screen and (orientation: landscape) {
+    body {
+        background-color: var(--secondary-color);
+    }
+} */
+

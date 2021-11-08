@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: darkslateblue;
+    color: #fff;
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav {
+    list-style: none;
+    position: absolute;
+    background-color: darkslateblue;
+    padding: 1rem 0;
+    right: 0;
+    width: 200px;
+    bottom: 0;
+    transform: translateY(100%) translateX(100%);
+    width: 200px;
+}
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+#toggler {
+    /* opacity: 0; */
+    position: absolute;
+    left: -5000px;
+}
+.toggler-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#toggler:checked ~ .navbar-nav{
+    visibility: visible;
+    transform: translateY(100%) ;
+}

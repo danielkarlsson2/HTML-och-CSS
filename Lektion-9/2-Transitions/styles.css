@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: darkred;
+    width: 200px;
+    height: 150px;
+    margin: 4rem 0 2rem;
+
+
+    /* transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+
+    transition: width 1s ease-in-out .5s, height 1s, transform 0.5s;
+    
+}
+.box:hover {
+    width: 400px;
+    height: 300px;
+
+    transform: translate(100px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    perspective: 1000px;
+}
+.card {
+    border: 1px solid #333;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(50deg);
+    background-color: gold;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: rotateX(0deg) translateY(-50px) scale(1.2);
+    z-index: 10;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: navy;
+    color: #fff;
+    box-shadow: 2px 2px 7px 1px #333;
+    transition: all 0.1s ease;
+}
+.btn-primary:hover {
+    background-color: #0b0bac;
+    box-shadow: 3px 7px 10px 5px #333;
+}
+.btn-primary:active {
+    background-color: #000068;
+    box-shadow: 1px 1px 5px 0 #333;
+}
+
+/* + tecken tar nästa syskon */
+/* #child1:hover + .child {
+    background-color: navy;
+} */
+#child1 ~ .child {
+    background-color: navy;
+}

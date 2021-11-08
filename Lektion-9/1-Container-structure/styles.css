@@ -29,12 +29,20 @@
 .hide {
     display: none;
 }
+.py-3 {
+    padding: 3rem 0;
+}
 
 
 
 /* NAVBAR */
 .navbar-nav {
     list-style: none;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-link {
     margin-left: 2rem;
@@ -43,8 +51,13 @@
     padding: 1rem 0;
 }
 
-
-
+/* SHOWCASE */
+#showcase {
+    padding: 3rem 0;
+}
+#contact {
+    padding: 3rem 0;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -58,6 +71,9 @@
     }
     .hide {
         display: block;
+    }
+    .navbar-nav {
+        display: flex;
     }
 
 }

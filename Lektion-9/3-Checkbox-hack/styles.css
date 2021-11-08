@@ -8,11 +8,22 @@
     width: 80%;
     margin: 0 auto;
 }
+.mt {
+    margin-top: 3rem;
+}
+.mb {
+    margin-bottom: 1rem;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 nav {
     background-color: darkslateblue;
     color: #fff;
     position: relative;
+    padding: 1rem 0;
 }
 
 .d-flex {
@@ -26,8 +37,8 @@ nav {
     background-color: darkslateblue;
     padding: 1rem 0;
     right: 0;
-    width: 200px;
     bottom: 0;
+    width: 200px;
     transform: translateY(100%) translateX(100%);
     width: 200px;
 }
@@ -50,4 +61,57 @@ nav {
 #toggler:checked ~ .navbar-nav{
     visibility: visible;
     transform: translateY(100%) ;
+}
+.btn {
+    background-color: darkslateblue;
+    padding: 1rem 2rem;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-green {
+    background-color: green;
+    color: #fff;
+}
+
+.group {
+    position: relative;
+}
+.popup {
+    position: absolute;
+    border: 1px solid #333;
+    padding: 1rem;
+    box-shadow: 3px 3px 7px 1px;
+    top: 0;
+    right: 100px;
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-100px);
+
+}
+.btn:hover + .popup {
+    opacity: 1;
+    transform: translateX(0);
+    /* display: block; */
+    /* visibility: visible; */
+}
+.btn:active + .popup{
+    background-color: yellow;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.error {
+    color: red;
+    /* display: none; */
+    visibility: hidden;
 }

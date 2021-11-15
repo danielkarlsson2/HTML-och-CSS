@@ -1,0 +1,33 @@
+/* pseudoelement */
+/* t ex hover, prickar vid ul */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* : vid klasser */
+ol li:hover {
+    color: limegreen;
+}
+
+/* två semikolon */
+p {
+    background-color: limegreen;   
+}
+p::before {
+    content: 'före';
+    /* width: 100px; */
+    /* height: 100px; */
+    /* display: block; */
+    background: blue;
+    color: #fff;
+}
+p::after{
+    content: ' efter';
+    background: red;
+    /* width: 20px; */
+    display: block;
+}

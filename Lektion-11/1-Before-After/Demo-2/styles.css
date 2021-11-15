@@ -16,18 +16,30 @@
     color: #ddd;    
 }
 
-a[data-tool-tip] {
+*[data-tool-tip] {
     position: relative;
 }
-a[data-tool-tip]::after {
+*[data-tool-tip]::after {
     content: attr(data-tool-tip);
     position: absolute;
-    bottom: 100%;
+    bottom: 0%;
     left: 0%;
     display: block;
-    background: rgba(68, 68, 68, 0.651);
+    background: rgba(68, 68, 68, 0.527);
     color: #fff;
     padding: 1rem 2rem;
     white-space: nowrap;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform ease-out 150ms, bottom ease-out 150ms;
     /* position: absolute; */
+}
+
+/* hover måste vara för after */
+/* hover är en class, after är ett pseudoelement. En vs 2 semikolon. */
+*[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 100%;
+
 }

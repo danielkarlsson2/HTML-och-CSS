@@ -1,0 +1,17 @@
+.loader {
+    /* background-color: red; */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    /* border-bottom: 10px solid green; */
+    border-bottom-color: rgb(60, 80, 60);
+    border-top-color: rgb(85, 68, 68);
+
+    animation: spinner 1.5s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg)}
+    100% { transform: rotate(360deg);}
+}

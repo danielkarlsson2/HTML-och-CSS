@@ -48,7 +48,7 @@ body,html {
 }
 .navbar-brand {
     flex: 1;
-    text-align: center;
+    /* text-align: center; */
     padding-top: .8rem;
 }
 .navbar-brand img {
@@ -56,6 +56,14 @@ body,html {
 }
 .navbar-nav {
     display: none;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    font-size: 1rem;
+
 }
 .navbar-toggler {
     color: var(--secondary-color);
@@ -113,12 +121,22 @@ body,html {
     background-color: var(--primary-color);
     padding-block: 4rem;
 }
+.testimonials .container {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
 .card {
     background-color: var(--card-color);
     border-radius: 2rem;
     padding: 1rem;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    /* margin-bottom: 8rem; */
+}
+.card:nth-child(1) {
+    /* margin-top: 4rem; */
 }
 .avatar {
     position: absolute;
@@ -127,11 +145,68 @@ body,html {
     transform: translate(-50%, -50%);
     width: 134px;
 }
-.img-fluid {
 
-}
 .quote {
     margin-top: 4rem;
     color: white;
     font-size: 2.5rem;
+}
+.testimonial-name {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+.testimonial-quote {
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.9;
+}
+.rating {
+    margin: 3rem 0;
+}
+.rating i {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+
+/* ----Media Queries---- */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .navbar-nav {
+        display: flex;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-brand {
+        flex: 0;
+        /* text-align: start; */
+    }
+    .hero .container {
+        
+    }
+    .hero button {
+        margin: 0;
+    }
+
+    .images {
+        display: flex;
+        gap: 1rem;
+    }
+    .testimonials .container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    
+    
 }

@@ -64,9 +64,7 @@ body {
 .text h2 {
   margin-bottom: 1rem;
 }
-.hero {
-  
-}
+
 .image {
   width: 70%;
   margin: 0 auto;
@@ -116,4 +114,6 @@ body {
     .text {
       text-align: center;
     }
+}
+
 }

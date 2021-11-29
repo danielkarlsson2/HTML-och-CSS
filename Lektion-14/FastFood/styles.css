@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #020F38;
+    --secondary-color: #DEAA09;
+    --card-color: #17285D;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body,html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBFBFB;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 1.3rem;
+    text-align: center;
+    max-width: 540px;
+}
+.btn {
+    border: none;
+    padding: .9rem 2.4rem;
+    border-radius: 100vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+.btn-secondary:hover {
+    background-color: var(--secondary-color-hover);
+}
+.img-fluid {
+    width: 100%;
+}
+.navbar {
+    background: var(--primary-color);
+    position: relative;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand {
+    flex: 1;
+    text-align: center;
+    padding-top: .8rem;
+}
+.navbar-brand img {
+    height: 4rem;
+}
+.navbar-nav {
+    display: none;
+}
+.navbar-toggler {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.hero {
+    background: rgba(0, 0, 0, 0.605) url('img/joseph-gonzalez-fdlZBWIP0aM-unsplash.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    /* padding-top: 12rem; */
+}
+.hero .container {
+    height: 62vh;
+    display: grid;
+    place-items: center;
+
+}
+.hero h1 {
+    color: white;
+    font-size: 2rem;
+}
+.hero button {
+    margin-top: 5rem;
+}
+
+
+/* ----Hur det fungerar---- */
+.title {
+    margin-block: 2rem;
+}
+.subtitle {
+    font-weight: 600;
+    line-height: 1.7;
+}
+.img-group {
+    margin-top: 3rem;
+}
+.img-text h3 {
+    margin-block: 1rem;
+}
+.img-text p {
+    line-height: 1.6;
+}
+.how .btn {
+    margin: 3rem 0;
+}
+
+
+/* ----Testimonials---- */
+
+.testimonials {
+    background-color: var(--primary-color);
+    padding-block: 4rem;
+}
+.card {
+    background-color: var(--card-color);
+    border-radius: 2rem;
+    padding: 1rem;
+    position: relative;
+    margin-top: 5rem;
+}
+.avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 134px;
+}
+.img-fluid {
+
+}
+.quote {
+    margin-top: 4rem;
+    color: white;
+    font-size: 2.5rem;
+}
